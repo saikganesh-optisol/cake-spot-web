@@ -1,0 +1,71 @@
+@import '../../sass/variables.scss';
+@import '../../sass/animation.scss';
+
+.navigation
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: $blackVariant;
+    align-items: center;
+    color: white;
+
+    .appHeader
+    {
+        display: flex;
+        align-items: center;
+
+        .spinner
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 2rem;
+        }
+
+        .appText
+        {
+            font-size: 1.7rem;
+            margin : 2rem;
+            font-weight: bolder;
+        }
+    }
+
+    .navOptions
+    {
+        display: flex;
+
+        .navLinks
+        {
+            color: white;
+            display: block;
+            margin: 2rem;
+            font-size: 1.2rem;
+            font-weight: 2.5rem;
+            cursor : pointer;
+
+            &:hover
+            {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .navButton
+    {
+        .logoutButton
+        {
+            background-color: $colorBlueVariant;
+            border : none;
+            color: white;
+            padding: 0.7rem 1.4rem;
+            border-radius: 2rem; 
+            margin: 2rem;
+            transition: transform 0.3s;
+
+            &:hover
+            {
+                transform : scale(1.1)
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+
+
+.shopItem
+{
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    margin : 2rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0rem 0.5rem 5rem #9e9e9e;
+
+    .itemBody
+    {
+        padding: .5rem;
+        box-shadow: 0rem -1.5rem 8rem #fff;
+        
+        .itemDescription
+        {
+            font-size: 1.3rem;
+        }
+    }
+
+    .itemFooter
+    {
+        display: flex;
+        justify-content: space-between;
+        padding: .5rem;
+        align-items: center;
+
+        .itemPrice
+        {
+            font-size: 1.5rem;
+        }
+
+        .itemQuantity
+        {
+            width: 6rem;
+            height: 4rem;
+        }
+    }
+}

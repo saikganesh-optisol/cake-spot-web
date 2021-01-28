@@ -1,0 +1,50 @@
+
+.cartItem
+{
+    display: flex;
+    margin-bottom: 2rem;
+
+    .cartImage
+    {
+        width: 15rem;
+        height : 15rem;
+        margin-right: 1rem
+    }
+
+    .itemDetail
+    {
+        margin-right: 1rem;
+
+        .itemName
+        {
+            font-size: 1.7rem;
+            text-transform: uppercase;
+        }
+
+        .itemDescription
+        {
+            font-size: 1.3rem;
+        }
+    }
+
+    .itemRequirement
+    {
+        display: flex;
+        flex-grow: 1;
+        justify-self: flex-end;
+
+        .itemQuantity
+        {
+            width: 5rem;
+            height: 2.5rem;
+            margin-right: 1rem;
+            margin-left: auto;
+        }
+
+        .itemPrice
+        {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    }
+}

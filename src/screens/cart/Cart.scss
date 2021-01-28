@@ -1,0 +1,44 @@
+@import '../../sass/variables.scss';
+
+.cart
+{
+
+    &Header
+    {
+
+        border-bottom: 2px solid $lightGrey2;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 2rem;
+
+        .cartHead
+        {
+            font-size: 3rem;
+            font-weight: bolder;
+            margin : 2rem;
+
+            .cartItemsCount
+            {
+                font-size: 2.2rem;
+                color: $darkGrey1;
+            }
+        }
+
+        .cartCheckout
+        {
+            margin-right: 2rem;
+            display : flex;
+            align-items: center;
+        }
+    }
+
+    &Items
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+
+        width: 100rem;
+        margin: 0 auto;
+    }
+}

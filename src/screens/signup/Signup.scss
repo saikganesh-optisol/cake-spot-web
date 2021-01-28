@@ -1,0 +1,85 @@
+@import '../../sass/mixins.scss';
+@import '../../sass/variables.scss';
+
+.signup
+{
+    @include flex-col;
+    min-height: 100vh;
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    .signupText
+    {
+        margin-bottom: 2rem
+    }
+
+    .formInputContainer
+    {   
+        display: flex;
+        position: relative;
+
+        .fieldIcon
+        {
+            width: 4rem;
+            height: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border: 1px solid $lightGrey1;
+        }
+
+        .formInput
+        {
+            width: 30rem;
+            height: 4rem;
+            border: 1px solid $lightGrey1;
+            font-family: inherit;
+            padding: 1rem 0 1rem 2rem;
+            margin-bottom: 2rem;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-left: none;
+            color: $lightGrey2;
+        }
+
+        .fieldControlIcon
+        {
+            position: absolute;
+            right: 0rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 4rem;
+            width: 4rem;
+        }
+    }
+
+    .addressesContainer
+    {
+        .addressHeaderContainer
+        {
+            display : flex;
+            align-items : center;
+            margin-bottom: 1rem;
+
+            .addressHeader
+            {
+                margin-right: 1rem;
+                font-size: 1.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    }
+
+    .submitButtonContainer
+    {
+        display: flex;
+        justify-content: center;
+    }
+}

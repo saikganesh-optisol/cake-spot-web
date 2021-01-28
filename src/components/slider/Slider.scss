@@ -1,0 +1,39 @@
+@import '../../sass/variables.scss';
+
+.slider
+{
+    height: 40rem;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    &Image
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: -1;
+        box-shadow: 1rem 1rem 4rem $lightGrey2;
+    }
+
+    &Dots
+    {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+
+        .sliderDotIcon
+        {
+            &:hover
+            {
+                transform: scale(1.2);
+            }
+        }
+
+    }
+}
